@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <p id="round">0</p>
+    <div class="overlay">
+        <h1></h1>
+    </div>
+    <div class="game-over">
+        <div>
+            <h1>GAME OVER</h1>
+            <p></p>
+            <button id="again">TRY AGAIN</button>
+        </div>
+        
+    </div>
+    <section>
+        <div class="center">
+            <div class="rgb">
+                <div class="red">
+                    <h1>Red</h1>
+                    <p id="red-text"></p>
+                    <input type="range" id="red" min="0" max="255" value="0" oninput="changeRed(this.value)" onchange="changeRed(this.value)">
+                </div>
+                <div class="green">
+                    <h1>Green</h1>
+                    <p id="green-text"></p>
+                    <input type="range" id="green" min="0" max="255" value="0" oninput="changeGreen(this.value)" onchange="changeGreen(this.value)">
+                </div>
+                <div class="blue">
+                    <h1>Blue</h1>
+                    <p id="blue-text"></p>
+                    <input type="range" id="blue" min="0" max="255" value="0" oninput="changeBlue(this.value)" onchange="changeBlue(this.value)">
+                </div>
+            </div>
+            <div class="button">
+                <button id="check">CHECK</button>
+            </div>
+            <div class="score">
+                <p></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
