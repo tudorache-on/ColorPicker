@@ -26,9 +26,16 @@ section {
 
 .rgb {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
     padding: 40px;
     padding-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .rgb {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 .score {
